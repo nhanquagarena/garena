@@ -1,69 +1,84 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Thông báo - Garena</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Thông báo từ Garena</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: linear-gradient(to bottom right, #d32f2f, #f57c00);
-      color: white;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      font-family: "Segoe UI", sans-serif;
+      color: #333;
       text-align: center;
-      padding: 60px 20px;
     }
+
     .container {
       max-width: 600px;
-      margin: auto;
-      background: rgba(0, 0, 0, 0.4);
-      padding: 30px;
-      border-radius: 15px;
-      box-shadow: 0 0 20px rgba(0,0,0,0.4);
+      margin: 80px auto;
+      background: white;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
     }
-    h1 {
-      font-size: 28px;
-      margin-bottom: 20px;
-    }
-    p {
-      font-size: 18px;
-      margin-bottom: 20px;
-    }
-    .warning {
-      color: #ffeb3b;
-      font-weight: bold;
-      margin-top: 10px;
-      margin-bottom: 30px;
-    }
-    a.button {
-      display: inline-block;
-      padding: 12px 24px;
-      background: #ffcc00;
-      color: #000;
-      font-weight: bold;
-      text-decoration: none;
-      border-radius: 8px;
-      transition: background 0.3s ease;
-    }
-    a.button:hover {
-      background: #ffe066;
-    }
+
     .logo {
       width: 100px;
+      margin-bottom: 25px;
+    }
+
+    h1 {
+      font-size: 24px;
+      color: #d32f2f;
       margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 17px;
+      line-height: 1.6;
+      margin: 12px 0;
+    }
+
+    .highlight {
+      font-weight: bold;
+      color: #d32f2f;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 24px;
+      background-color: #d32f2f;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .button:hover {
+      background-color: #b71c1c;
+    }
+
+    .footer {
+      margin-top: 30px;
+      font-size: 13px;
+      color: #999;
     }
   </style>
 </head>
 <body>
   <div class="container">
     <img src="https://upload.wikimedia.org/wikipedia/vi/0/09/Garena_logo.png" alt="Garena Logo" class="logo">
-    <h1>THÔNG BÁO HỆ THỐNG</h1>
-    <p>Do lượng người truy cập quá lớn, hệ thống đang trong trạng thái quá tải.</p>
-    <p>Vui lòng <strong>vượt link thêm</strong> để được ưu tiên vào hàng chờ và tiếp tục nhận quà.</p>
-    <p class="warning">⚠ Nếu bạn thoát, đồng nghĩa sẽ reset về hàng chờ ban đầu và mất thời gian chờ đợi.</p>
+    <h1>Thông báo từ hệ thống Garena</h1>
+    <p>Hiện tại, do số lượng người truy cập quá lớn, hệ thống đang tạm thời quá tải.</p>
+    <p>Vui lòng <span class="highlight">vượt link xác minh</span> để được <strong>ưu tiên</strong> truy cập nhanh và tránh phải chờ lâu.</p>
+    <p>Nếu bạn <strong>thoát trang</strong>, hệ thống sẽ <span class="highlight">đặt lại hàng chờ</span> và bạn có thể phải đợi lâu hơn.</p>
+    
     <a href="https://example.com/link" class="button">Tiếp tục truy cập</a>
-    <p style="margin-top: 30px; font-size: 14px; opacity: 0.8;">
-      © Garena Việt Nam 2025 - Mọi quyền được bảo lưu.
-    </p>
+
+    <div class="footer">© 2025 Garena Việt Nam - Mọi quyền được bảo lưu.</div>
   </div>
 </body>
 </html>
